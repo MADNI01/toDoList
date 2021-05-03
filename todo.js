@@ -124,18 +124,3 @@ function finishAllFun() {
 }
 
     
-function evenLast(numbers) {
-    let result = 0
-    for(i=0;i<numbers.length;i++){
-        
-        if(numbers[i] % 2 == 0){
-            result += numbers[i]
-            console.log(numbers[i])
-        }else if(numbers[i] == numbers[numbers.length -1]){
-            result *= numbers[numbers.length -1]
-            console.log(result)
-        }
-    }
-  }
-  
-console.log(evenLast([2,3,4,5,9,2,1,3]))
