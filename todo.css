@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0;
+    font-family: Arial, tahoma, sans-serif;
+}
+.container{
+    width: 1080px;
+    margin: 40px auto;
+}
+.add-task{
+    width: 100%;
+    background-color: #029688;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.add-task input{
+    width: 100%;
+    height: 60px;
+    background-color: #4eb5ac;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    color:white;
+    padding: 20px;
+}
+.add-task span{
+    color:#029688;
+    position: absolute;
+    font-size: 4.3em;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.rotate{
+    transform: rotate(360deg);
+}
+.tasks-list{
+    background-color: #f6f5f7;
+    width: 100%;
+    padding:20px;
+
+}
+.tasks-list span{
+    display: block;
+    background-color: white;
+    padding: 20px;
+    color: #9c9b9c;
+}
+.main-span{
+    font-size: 1.3em;
+}
+.tasks-list > span:not(:last-child) {
+    margin-bottom: 10px;
+}
+.tasks-list span .delete{
+    float: right;
+    padding: 4px 10px;
+    background-color:#ec2268 ;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: 16px;  
+    transition: background 0.3s;    
+}
+.tasks-list span .delete:hover{
+    background-color:#c01c56 ;
+}
+.tasks-list span .finished-btn{
+    float: right;
+    padding: 4px 10px;
+    background-color:#05abf8 ;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold; 
+    margin-right: 5px ;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.tasks-list span .finished-btn:hover{
+    background-color:#0693d4 ;
+}
+.finished{
+    text-decoration: line-through;
+    text-decoration-color:#029688 ;
+    text-decoration-style: solid;
+}
+.state{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+    align-items: center;
+}
+.tasks-count{
+    background-color: #ec2268;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+}
+.tasks-completed{
+    background-color: #05abf8;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+
+}
+
+.delete-all{
+    background-color: #4eb5ac;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+    cursor: no-drop;
+    opacity: 0;
+    letter-spacing: -7px;
+    transition: 0.4s;
+
+}
+.finish-all{
+    background-color: #4eb5ac;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+    cursor: no-drop;
+    opacity: 10;
+    letter-spacing: -7px;
+    transition: 0.4s;
+}
+.active{
+    background-color: #029688;
+    cursor: pointer;
+    opacity: 10;
+    padding: 10px 20px;
+    letter-spacing: 0px;
+
+}
+.active:hover{
+    background-color:#4eb5ac;
+
+}
+
+
+
