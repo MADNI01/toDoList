@@ -9,7 +9,7 @@ let finishAll = document.querySelector(".finish-all");
 
 plusBtn.addEventListener("click",addTask);
 
-window.addEventListener("keyup",checkKey, false);
+window.addEventListener("keyup",checkKey);
 function checkKey(key) {
     if (key.keyCode == 13) {
         addTask();
