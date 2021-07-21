@@ -124,3 +124,8 @@ function finishAllFun() {
 }
 
     
+function calculate(a) {
+    let b = eval(a.replace(/plus/g, "+"))
+    return b.toString()
+}
+console.log(calculate("1plus2plus3plus4"))
