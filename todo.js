@@ -32,7 +32,7 @@ function addTask() {
         let mainSpan = document.createElement("span");
         let text = document.createTextNode(input.value);
         
-        mainSpan.classList.add("main-span",input.value)
+        mainSpan.classList.add("main-span")
         mainSpan.appendChild(text);
         let deleteElement = document.createElement("span");
         deleteElement.classList.add("delete");
